@@ -2,14 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+//        multithreading   =    Process of executing multiple threads simultaneously
+        //                      Help maximum utilization of CPU
+        //                      Threads are independent, they dont affect the execution of other threads
+        //                      An exception in one thread will not interrupt other threads
+        //                      Useful for serrving multiple clients, multiplayer games or other mutually independent tasks
+
+        MyThread thread1 = new MyThread();
+
+        MyRunnable runnable1 = new MyRunnable();
+        Thread thread2 = new Thread(runnable1);
+
+
+
+
     }
 }
